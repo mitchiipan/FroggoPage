@@ -1,0 +1,256 @@
+body {
+    background-color: honeydew;
+
+}
+p {
+    font-family: "Calibri Light", monospace;
+}
+
+#backgroundBox img {
+
+    width: 200px;
+    border-radius: 100px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+}
+
+.animatedFroggo {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    animation-name: flyingFroggo;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+.animatedFroggo img{
+    width: 70px;
+    border-radius: 100px;
+}
+
+@keyframes flyingFroggo {
+     0%   { left:1650px; top:20px;}
+    20%  { left:1700px; top:200px;}
+    40%  { left:1500px; top:800px;}
+    60%  { left:1700px; top:700px;}
+    80%  { left:1400px; top:500px;}
+    100% { left:1650px; top:20px;}
+}
+
+.animatedFroggo2 {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    animation-name: flyingFroggo2;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+.animatedFroggo2 img{
+    width: 70px;
+    border-radius: 100px;
+}
+
+@keyframes flyingFroggo2 {
+    0%   { left:1500px; top:0px;}
+    20%  { left:1400px; top:300px;}
+    40%  { left:1700px; top:700px;}
+    60%  { left:1450px; top:400px;}
+    80%  { left:1700px; top:200px;}
+    100% { left:1500px; top:0px;}
+}
+
+ul {
+    font-family: "Calibri Light", monospace;
+    list-style-type: none; /* Removes the bullets. A navigation bar does not need list markers*/
+    padding: 0;
+    width: 200px;
+    /*background-color: #d9be66;*/
+    margin: 30px 0px 0 40px;
+    border-radius: 500px;
+    text-align: center;
+
+
+}
+
+li a {
+    display: block; /* Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want) */
+    color: #000;
+    padding: 8px 1px;
+    text-decoration: none;
+
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.flex-container > div {
+
+    padding: 0px;
+    margin: 0px 70px 85px;
+}
+
+.navBar {
+
+
+}
+button{
+
+    background-color: #d7d4d4;
+    font-size: 20px;
+    border-style: solid;
+    color: #14927f;
+    font-family: 'Calibri Light', monospace;
+    transition: background-color 0.35s, /* smoothed das ganze aus, wenn man rüber hovert oder das anklickt, also die Veränderung, pretty nice*/ color 0.35s;
+    border-radius: 9px;
+    cursor: pointer;
+    border-color: #C68383;
+    padding: 20px;
+}
+
+.fairyFroggo {
+}
+
+.flatFroggo {
+
+}
+
+.chubbyFroggo {
+}
+
+.bouncyFroggo {
+}
+
+.froggoworld {
+
+    margin-top: 70px;
+}
+
+
+button:hover { /* hover is a pseudo class, adds extra style zu meinem Button, zusätzlich zu dem was er eh hat . wenn die Maus rüberhovert*/
+    background-color: #C68383;
+    color: #b1dacc;
+}
+
+button:active {
+    background-color: #14927f;
+
+}
+
+
+
+.wrapper {
+    width: 1000px;
+    /*height: 100px;*/
+    background-color: honeydew;
+    margin: 0px auto auto;
+
+
+    .dooom {
+        color: darkslategray;
+    }
+
+    .dooom:hover {
+        text-decoration: underline #000000;
+    }
+}
+
+h4 {
+}
+
+#backgroundBox {
+    background-color: #C68383;
+    padding: 10px;
+    height: 390px;
+    /*border-radius: 5px;*/
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+h2 {
+    background-color: rgba(213, 201, 201, 0.99);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    /*margin-top: 80px;*/
+    border-radius: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+/*.image {*/
+/*    !*float: left;*!*/
+/*    !*width: 50%;*!*/
+/*    !*display: block;*!*/
+/*    !*text-align: center;*!*/
+/*    !*border: 1px solid black;*!*/
+/*}*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background-color: rgba(213, 201, 201, 0.99);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 40px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+.text {
+    float: left;
+    width: 39.7%;
+    background-color: #d7d4d4;
+    padding: 10.5px;
+    margin-top: 18px;
+    text-align: center;
+    border-radius: 5px;
+    vertical-align: top;
+
+}
+
+
+article {
+    float: right;
+    padding: 14px;
+    width: 60%;
+    margin-top: 18px;
+    background-color: #d7d4d4;
+    border-radius: 5px;
+    vertical-align: top;
+
+}
+
+
+
+
+footer {
+    background-color: #14927f;
+    height: 100px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    margin-top: 3px;
+
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article, aside {
+        width: 100%;
+        height: auto;
+    }
+}
